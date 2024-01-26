@@ -1,0 +1,8 @@
+{
+  "volto-volto-training": {
+    "local": "addons/volto-volto-training/src"
+  },
+  "ploneWebsite": {
+    "local": "addons/ploneWebsite/src"
+  }
+}
