@@ -356,7 +356,55 @@
   object-fit: cover;
 }
 
-.ui.basic.segment.content-area {
-  padding: 0;
-  margin: 0;
+// Release block
+.block.release {
+  background: #f0f8fc;
+  padding: 20px 0;
+  h2 {
+    font-weight: bold;
+  }
+  .text-button-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      width: 600px;
+      font-size: 1.25rem;
+      color: #595959;
+      font-weight: 300;
+    }
+
+    a {
+      border-radius: 0;
+      color: @white;
+      background: @blue;
+      border: 2px solid @blue;
+      font-weight: normal;
+      padding: 14px 20px 16px 22px;
+      display: inline-block;
+      line-height: 1em;
+      height: 56px;
+      margin-right: 150px;
+      &::after {
+        background-image: url(https://plone.org/static/media/arrow-right-white.141ecd63.svg);
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        margin-left: 1.5em;
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: '';
+        vertical-align: text-top;
+      }
+
+      &:hover {
+        background: @white;
+        color: @blue;
+
+        &::after {
+          background-image: url(https://plone.org/static/media/arrow-right.c1b96a21.svg);
+        }
+      }
+    }
+  }
 }
