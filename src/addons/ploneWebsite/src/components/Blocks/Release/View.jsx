@@ -10,6 +10,7 @@ const ReleaseView = (props) => {
           <img
             src={`${data.image[0]['@id']}/@@images/image`}
             alt={data.imageAlt}
+            className="hero-image"
           />
         )}
         <h2>{data.title}</h2>

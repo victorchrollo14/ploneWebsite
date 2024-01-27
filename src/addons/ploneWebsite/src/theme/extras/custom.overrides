@@ -360,6 +360,12 @@
 .block.release {
   background: #f0f8fc;
   padding: 20px 0;
+
+  .hero-image {
+    height: 60vh;
+    width: 80vw;
+    object-fit: cover;
+  }
   h2 {
     font-weight: bold;
   }
@@ -403,6 +409,67 @@
 
         &::after {
           background-image: url(https://plone.org/static/media/arrow-right.c1b96a21.svg);
+        }
+      }
+    }
+  }
+}
+
+// Grid Listing
+.block.listing.listingGrid {
+  font-family: 'Helvetica';
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .listing-grid {
+    .ui.card {
+      width: 100%;
+
+      img {
+        height: 260px;
+        object-fit: cover;
+        object-position: center center;
+      }
+      .content {
+        .news-card-subtitle {
+          color: @blue;
+          font-size: 1.2rem;
+          font-weight: 700;
+          margin-bottom: 1rem;
+        }
+        h3 {
+          color: @blue;
+          font-size: 1.5rem;
+          font-weight: 700;
+          margin-top: 0;
+          padding-right: 1rem;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        .date {
+          margin-bottom: 2rem;
+        }
+        .news-card-button {
+          font-family: 'Helvetica';
+          border: 1px solid @blue;
+          color: @blue;
+          padding: 4px 20px;
+          border-radius: 5px;
+          font-size: 13px;
+          line-height: 15px;
+          display: inline-flex;
+          align-items: center;
+
+          .icon {
+            margin-left: 1.5em;
+          }
+          &:hover {
+            color: @white;
+            background: @blue;
+          }
         }
       }
     }
